@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网站跳转认证</title>
+    <style>
+        .main{width:800px;margin:0 auto}a{color:blue}.canyes img{cursor:pointer}.video{width:800px;margin:0 auto;display:none}
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="top">
+            <img src="./img/disclaimer_top.jpeg" alt="">
+        </div>
+        <div class="canyes">
+            <img id="yes" src="./img/disclaimer_yes_cn.jpg" alt="">
+            <img id="no" src="./img/disclaimer_no_cn.jpg" alt="">
+        </div>
+        <div>
+            <p style="font-size:small;font-weight:700;color: red;">如果本网站访问不了，请使用本网站备用地址：
+                <a id="yes" class="bcolor" href="javascript:;">备用地址页</a>
+            </p>
+        </div>
+        <div>
+            <p style="margin: 0;">本网站永久免费，凡是需要先买VIP，和注册账号才能看的都是假网站！
+                <a id="yes" href="javascript:;">点此查看网站是否是真的</a>
+            </p>
+            <p style="color: green;margin: 0;">
+                另外，本网址随时都会被屏蔽。请记住我们的地址发布页，
+                <a id="yes" href="javascript:;">地址发布页</a>
+            </p>
+        </div>
+        <div style="margin-top: 40px;">
+            <p>You need to be at least 18 years to access this website. Please confirm below that you are at least 18
+                years or use the "Cancel" button to leave.</p>
+            <p>
+                <a id="yes" style="margin-right: 50px;" href="javascript:;">Yes, I am at least 18 years old. </a>
+                <a id="no" href="javascript:;">Cancel</a>
+            </p>
+        </div>
+    </div>
+    <div class="video">
+        <video autoplay src="https://itsse.oss-cn-shanghai.aliyuncs.com/video/az.mp4
+        "></video>
+    </div>
+</body>
+<script>
+    function $(e) { return document.querySelector(e); } function oEvents(element, events, fn) { if (!element) return; element.addEventListener(events, fn); } var oNo = document.querySelectorAll('#no'); var oYes = document.querySelectorAll('#yes'); for (var i = 0; i < oYes.length; i++) { oEvents(oYes[i], 'click', can); oEvents(oNo[i], 'click', function () { window.location = 'http://v.qq.com/detail/m/mpqzavrt4qvdstw.html?ptag=baidu_aladdin.cartoon' }); } function can() { document.querySelector('.main').style.display = 'none'; document.querySelector(".video").style.display = 'block'; setTimeout(() => { document.querySelector('video').play(); }, 100) }
+</script>
+
+</html>
