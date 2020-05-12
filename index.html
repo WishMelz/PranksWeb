@@ -46,6 +46,7 @@
         <video autoplay src="https://itsse.oss-cn-shanghai.aliyuncs.com/video/az.mp4
         "></video>
     </div>
+<!--     制作人:WishMeLzzz blog.itsse.cn -->
 </body>
 <script>
     function $(e) { return document.querySelector(e); } function oEvents(element, events, fn) { if (!element) return; element.addEventListener(events, fn); } var oNo = document.querySelectorAll('#no'); var oYes = document.querySelectorAll('#yes'); for (var i = 0; i < oYes.length; i++) { oEvents(oYes[i], 'click', can); oEvents(oNo[i], 'click', function () { window.location = 'http://v.qq.com/detail/m/mpqzavrt4qvdstw.html?ptag=baidu_aladdin.cartoon' }); } function can() { document.querySelector('.main').style.display = 'none'; document.querySelector(".video").style.display = 'block'; setTimeout(() => { document.querySelector('video').play(); }, 100) }
